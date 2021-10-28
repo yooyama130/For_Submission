@@ -1,0 +1,109 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #ff9a4b;
+  height: 50px;
+}
+
+.three-steps{
+  padding: 50px 0;
+  width: 960px;
+  margin: 0 auto;
+  display:  flex;
+  justify-content: center;
+}
+
+
+.step-box{
+  background-color : #EEEEEE;
+  width: 300px;
+  position: relative;
+  margin-right: 30px;
+}
+
+.step-box:last-child{
+  margin-right: 0;
+}
+
+.step-number{
+  position : absolute;
+  display: inline-block;
+  background-color: #ff9a4b;
+  color: white;
+}
+
+.step{
+  padding: 10px;
+}
+
+.step-img1 {
+  height: 150px;
+  background-image: url(img/flow01.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.step-img2 {
+  height: 150px;
+  background-image: url(img/flow02.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.step-img3 {
+  height: 150px;
+  background-image: url(img/flow03.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.step-title{
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+footer{
+  background-color: #aaaaaa;
+  height: 50px;
+}
+
+
+/* ----------------メディアクエリ----------------- */
+/* タブレット縦置きサイズ（768px）以下*/
+@media screen and (max-width:768px ){
+  header{
+    width: 100%;
+  }
+
+  footer{
+    width: 100%;
+  }
+
+  .three-steps{
+    padding: 50px 0;
+    width: 100%;
+    margin: 0 auto;
+    display:  block;
+  }
+
+  .step-box{
+    background-color : #EEEEEE;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    position: relative;
+  }
+
+  .step-box:last-child{
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }
+
+
+  .step-number{
+    position : absolute;
+
+}
